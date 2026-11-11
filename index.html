@@ -90,7 +90,13 @@ nav ul a:hover{color:var(--rose)}
 .pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
 .pain-card{background:var(--cream);border-radius:var(--radius);padding:32px;border:1px solid var(--line)}
 .pain-card .q{font-size:40px}
-.pain-card .q img{width:96px;height:96px;display:block;object-fit:contain}
+.pain-card .q img{width:96px;height:96px;display:block;object-fit:contain;border-radius:24px}
+.emo{width:1.55em;height:1.55em;border-radius:50%;vertical-align:-.42em;margin-right:.3em;object-fit:cover;background:#fff8f3;box-shadow:0 2px 6px rgba(91,42,134,.18)}
+.emo.r{margin-right:0;margin-left:.3em}
+.btn .emo{margin-right:0;width:1.7em;height:1.7em;vertical-align:middle}
+.emo-lg{width:84px;height:84px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 4px;background:#fff8f3;box-shadow:0 6px 16px -6px rgba(91,42,134,.35)}
+.fact .emo-lg{margin:0 0 6px}
+.thanks .emo-lg{width:120px;height:120px;margin:0 auto 10px;animation:bob 3s ease-in-out infinite}
 .pain-card h3{font-size:24px;color:var(--plum);margin:8px 0}
 .pain-card p{color:var(--muted)}
 .turn{margin-top:56px;text-align:center;font-family:"Noto Serif TC",serif;font-size:clamp(26px,3.2vw,38px);color:var(--plum-d);font-weight:700}
@@ -206,7 +212,7 @@ details p{padding:0 28px 24px;color:var(--muted)}
 .signup .eyebrow{background:rgba(255,255,255,.14);color:#fbcfe8}
 .promise{margin-top:26px;list-style:none}
 .promise li{margin:12px 0;padding-left:40px;position:relative}
-.promise li::before{content:"💗";position:absolute;left:0}
+.promise li::before{content:"";position:absolute;left:0;top:.45em;width:26px;height:26px;border-radius:50%;background:#fff8f3 url(img/EMO-heart.web.webp) center/cover}
 form{background:#fff;color:var(--ink);border-radius:var(--radius);padding:40px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
 form h3{font-size:30px;color:var(--plum-d);margin-bottom:6px}
 form .sub{color:var(--muted);margin-bottom:20px}
@@ -260,13 +266,13 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <span class="eyebrow">🌷 婦女再就業專案・線上一日課</span>
+      <span class="eyebrow"><img class="emo" src="img/EMO-tulip.web.webp" alt="" width="40" height="40" loading="lazy"> 婦女再就業專案・線上一日課</span>
       <h1><span class="nw">台灣女人的<span class="hl">幸福</span>，</span><br><span class="nw">從今天開始升級</span>
         <span class="gov"><span class="nw">妳的幸福妳掌握，</span><b class="nw">學費政府來買單</b></span>
       </h1>
       <p class="lead">一天課程，讓身體和心情一起放鬆下來，讓自己更有自信，用 AI 做事更輕鬆。<br>妳變得更好，全家也會更幸福。</p>
       <div class="ctas">
-        <a class="btn big" href="#signup">💗 我想免費上課</a>
+        <a class="btn big" href="#signup"><img class="emo" src="img/EMO-heart.web.webp" alt="" width="40" height="40" loading="lazy"> 我想免費上課</a>
         <a class="btn ghost" href="#course">先看看學什麼</a>
       </div>
       <div class="chips">
@@ -278,9 +284,9 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     <div class="hero-visual">
       <div class="orbit"></div>
       <div class="slot" data-img="IMG-001"><img src="img/IMG-001-v2.web.webp" width="799" height="1000" alt="穿薰衣草紫西裝外套、在窗邊自信微笑的台灣女性"></div>
-      <div class="badge-float b1">🌸 身心靈健康</div>
-      <div class="badge-float b2">🤖 AI 幫我起飛</div>
-      <div class="badge-float b3">🌱 ESG 新職能</div>
+      <div class="badge-float b1"><img class="emo" src="img/EMO-wellness.web.webp" alt="" width="40" height="40" loading="lazy"> 身心靈健康</div>
+      <div class="badge-float b2"><img class="emo" src="img/EMO-ai.web.webp" alt="" width="40" height="40" loading="lazy"> AI 幫我起飛</div>
+      <div class="badge-float b3"><img class="emo" src="img/EMO-esg.web.webp" alt="" width="40" height="40" loading="lazy"> ESG 新職能</div>
     </div>
   </div>
 </header>
@@ -367,12 +373,12 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     <p class="sec-lead">短短一天的課，會讓妳在很多地方都不一樣。</p>
     <div class="ba" style="text-align:left">
       <div class="col">
-        <h3>😔 上課前</h3>
+        <h3><img class="emo" src="img/EMO-tired.web.webp" alt="" width="40" height="40" loading="lazy"> 上課前</h3>
         <ul><li>常常覺得累，沒時間照顧自己</li><li>對回到職場沒有把握</li><li>聽到 AI、ESG 就覺得很遙遠</li><li>覺得自己的價值被埋沒了</li></ul>
       </div>
       <div class="arrow">➜</div>
       <div class="col after">
-        <h3>🌟 上課後</h3>
+        <h3><img class="emo" src="img/EMO-star.web.webp" alt="" width="40" height="40" loading="lazy"> 上課後</h3>
         <ul><li>懂得照顧自己，身心更平衡</li><li>多了 AI 和 ESG 兩項新能力</li><li>對回職場或創業更有信心</li><li>自己快樂了，家裡也更和樂</li></ul>
       </div>
     </div>
@@ -383,7 +389,7 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <section class="money" id="free">
   <div class="wrap">
     <div class="center">
-      <span class="eyebrow">💰 政府出錢讓妳學習成長</span>
+      <span class="eyebrow"><img class="emo" src="img/EMO-money.web.webp" alt="" width="40" height="40" loading="lazy"> 政府出錢讓妳學習成長</span>
       <h2 class="sec-title">學費不用擔心，政府幫妳出</h2>
       <p class="sec-lead">勞動部「婦女再就業計畫」補助想重新出發的女性。只要符合資格，就可以免費上課。</p>
     </div>
@@ -403,9 +409,9 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     </div>
 
     <div class="elig">
-      <div><div class="i">🎂</div><h4>年滿 18 歲婦女</h4><p>不是學生，沒有年齡上限</p></div>
-      <div><div class="i">🏠</div><h4>離開公司保險滿半年</h4><p>最近 180 天沒有公司投保或職災保險</p></div>
-      <div><div class="i">🧾</div><h4>不是公司負責人</h4><p>名下沒有公司或商業登記</p></div>
+      <div><div class="i"><img class="emo-lg" src="img/EMO-cake.web.webp" alt="" width="84" height="84" loading="lazy"></div><h4>年滿 18 歲婦女</h4><p>不是學生，沒有年齡上限</p></div>
+      <div><div class="i"><img class="emo-lg" src="img/EMO-house.web.webp" alt="" width="84" height="84" loading="lazy"></div><h4>離開公司保險滿半年</h4><p>最近 180 天沒有公司投保或職災保險</p></div>
+      <div><div class="i"><img class="emo-lg" src="img/EMO-receipt.web.webp" alt="" width="84" height="84" loading="lazy"></div><h4>不是公司負責人</h4><p>名下沒有公司或商業登記</p></div>
     </div>
     <p class="who">這些人都可以：<span>全職媽媽</span><span>照顧家人離職</span><span>工會保</span><span>農保・漁保</span><span>無保</span><span>軍公教・勞保退休</span></p>
     <p class="who">不確定自己符不符合？留下資料，我們幫妳確認。</p>
@@ -416,7 +422,7 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <section class="info" id="info">
   <div class="wrap">
     <div class="center">
-      <span class="eyebrow">📅 上課資訊</span>
+      <span class="eyebrow"><img class="emo" src="img/EMO-calendar.web.webp" alt="" width="40" height="40" loading="lazy"> 上課資訊</span>
       <h2 class="sec-title">共二場，選一場參加</h2>
       <p class="sec-lead">假日班、平日班都有，看哪一天方便就選哪一天。</p>
     </div>
@@ -425,9 +431,9 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
       <div class="session wd"><span class="lbl">第二場・平日班</span><div class="date">2027 年 2 月 24 日（三）</div><p>09:00 – 18:00</p></div>
     </div>
     <div class="facts">
-      <div class="fact"><div class="i">💻</div><h4>線上視訊上課</h4><p>遠距線上學習，在家也能上課。</p></div>
-      <div class="fact"><div class="i">🎬</div><h4>有錄影可補課</h4><p>臨時有事，先請假就能看錄影補課。</p></div>
-      <div class="fact"><div class="i">🤝</div><h4>專人輔導</h4><p>從申請到結案，都有專人協助。</p></div>
+      <div class="fact"><div class="i"><img class="emo-lg" src="img/EMO-laptop.web.webp" alt="" width="84" height="84" loading="lazy"></div><h4>線上視訊上課</h4><p>遠距線上學習，在家也能上課。</p></div>
+      <div class="fact"><div class="i"><img class="emo-lg" src="img/EMO-video.web.webp" alt="" width="84" height="84" loading="lazy"></div><h4>有錄影可補課</h4><p>臨時有事，先請假就能看錄影補課。</p></div>
+      <div class="fact"><div class="i"><img class="emo-lg" src="img/EMO-handshake.web.webp" alt="" width="84" height="84" loading="lazy"></div><h4>專人輔導</h4><p>從申請到結案，都有專人協助。</p></div>
     </div>
     <div class="slot wide" data-img="IMG-005" style="margin-top:40px"><img src="img/IMG-005-v1.web.webp" alt="在家客廳線上上課的溫馨畫面" loading="lazy"></div>
   </div>
@@ -438,7 +444,7 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   <div class="wrap">
     <div class="slot sq" data-img="TEACHER"><img src="img/TEACHER-patrick.web.webp" alt="講師朱元中 Patrick 形象照" loading="lazy"></div>
     <div>
-      <span class="eyebrow">💪 正港實戰班</span>
+      <span class="eyebrow"><img class="emo" src="img/EMO-muscle.web.webp" alt="" width="40" height="40" loading="lazy"> 正港實戰班</span>
       <h3><a href="https://event.bymyway.com/curated/patrick-chu/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:6px">朱元中 Patrick</a></h3>
       <div class="role">天下顧問創辦人・實戰派講師</div>
       <ul>
@@ -456,7 +462,7 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <section class="edm" id="edm">
   <div class="wrap">
     <div class="center">
-      <span class="eyebrow">📥 EDM 下載</span>
+      <span class="eyebrow"><img class="emo" src="img/EMO-download.web.webp" alt="" width="40" height="40" loading="lazy"> EDM 下載</span>
       <h2 class="sec-title">把幸福分享給身邊的姊妹</h2>
       <p class="sec-lead">直式適合 LINE 和手機，橫式適合臉書和電子報。下載後轉傳，邀請好朋友一起來上課。</p>
     </div>
@@ -478,7 +484,7 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <!-- FAQ -->
 <section class="faq" id="faq">
   <div class="wrap">
-    <div class="center"><span class="eyebrow">💬 常見問題</span><h2 class="sec-title">大家最常問的</h2></div>
+    <div class="center"><span class="eyebrow"><img class="emo" src="img/EMO-chat.web.webp" alt="" width="40" height="40" loading="lazy"> 常見問題</span><h2 class="sec-title">大家最常問的</h2></div>
     <div class="faq-list">
       <details><summary>我很久沒上課了，跟得上嗎？</summary><p>可以的。課程從生活化的例子講起，AI 也從零教起，不需要任何基礎。線上課程還有錄影可以補課。</p></details>
       <details><summary>真的不用自己付學費嗎？</summary><p>符合婦女再就業計畫資格的學員，可以申請政府補助免費參訓。專人會先幫妳確認資格，再說明完整流程。</p></details>
@@ -494,7 +500,7 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <section class="signup" id="signup">
   <div class="wrap">
     <div>
-      <span class="eyebrow">✍️ 一分鐘留資料</span>
+      <span class="eyebrow"><img class="emo" src="img/EMO-pen.web.webp" alt="" width="40" height="40" loading="lazy"> 一分鐘留資料</span>
       <h2 class="sec-title">讓這一天，成為妳幸福的轉捩點</h2>
       <p class="sec-lead">只要留下聯絡方式，接下來的事交給我們就好。</p>
       <ul class="promise">
@@ -503,9 +509,9 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
         <li>資料只用來聯絡妳，不會外流</li>
       </ul>
     </div>
-    <form id="leadForm" novalidate data-works-form="women-happiness" data-success="💐 收到了，謝謝妳！專人會盡快主動聯絡妳。現在開始，好好期待更幸福的自己吧！">
+    <form id="leadForm" novalidate data-works-form="women-happiness" data-success="收到了，謝謝妳！專人會盡快主動聯絡妳。現在開始，好好期待更幸福的自己吧！">
       <div id="formBody">
-        <h3>我想免費上課 🌷</h3>
+        <h3>我想免費上課 <img class="emo r" src="img/EMO-tulip.web.webp" alt="" width="40" height="40" loading="lazy"></h3>
         <p class="sub">標 * 的是必填，其他可以留空。</p>
         <label for="name">姓名 *</label>
         <input id="name" name="name" autocomplete="name" placeholder="例如：林美華" required>
@@ -523,10 +529,10 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
         </select>
         <label class="agree"><input type="checkbox" id="agree" checked required> 我同意提供以上資料，只用來聯絡我和協助辦理婦女再就業計畫的相關申請。</label>
         <div class="err" id="err"></div>
-        <button class="btn big" type="submit">🚀 送出，請專人聯絡我</button>
+        <button class="btn big" type="submit"><img class="emo" src="img/EMO-rocket.web.webp" alt="" width="40" height="40" loading="lazy"> 送出，請專人聯絡我</button>
       </div>
       <div class="thanks" id="thanks">
-        <div class="i">💐</div>
+        <div class="i"><img class="emo-lg" src="img/EMO-bouquet.web.webp" alt="" width="120" height="120" loading="lazy"></div>
         <h3>收到了，謝謝妳！</h3>
         <p>專人會盡快主動聯絡妳。<br>現在開始，好好期待更幸福的自己吧！</p>
       </div>
@@ -544,7 +550,7 @@ footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   </div>
 </footer>
 
-<a class="btn fab" href="#signup">💗 免費報名</a>
+<a class="btn fab" href="#signup"><img class="emo" src="img/EMO-heart.web.webp" alt="" width="40" height="40" loading="lazy"> 免費報名</a>
 
 <script>
 /* 飄落花瓣 */

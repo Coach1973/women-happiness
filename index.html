@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台灣女人的幸福學｜妳的幸福妳掌握，學費政府來買單</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="台灣女人的幸福學｜妳的幸福妳掌握，學費政府來買單">
+    <meta property="og:description" content="一天課程，身心靈、ESG、AI 三力合一。符合資格的婦女可免費參訓，留下資料，專人幫妳辦好一切。">
+    <meta property="og:image" content="https://event.bymyway.com/curated/women-happiness/img/IMG-001-v2.web.webp">
+<meta name="description" content="一天課程，身心靈、ESG、AI 三力合一。符合資格的婦女可免費參訓，留下資料，專人幫妳辦好一切。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#5b2a86; --plum-d:#3b1660; --violet:#8b5cf6; --rose:#ec4899; --peach:#ffb38a;
+  --gold:#f5b942; --cream:#fff8f3; --ink:#2a1838; --muted:#6b5a78; --card:#ffffff;
+  --line:#efe3f7; --radius:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip;max-width:100%}
+.hero{max-width:100vw}
+body{font-family:"Noto Sans TC",system-ui,sans-serif;font-size:20px;line-height:1.85;color:var(--ink);background:var(--cream);overflow-x:clip}
+h1,h2,h3{font-family:"Noto Serif TC",serif;line-height:1.35;letter-spacing:.02em}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:96px 0;position:relative}
+.eyebrow{display:inline-block;font-size:20px;font-weight:700;letter-spacing:.12em;color:var(--rose);background:#fde7f3;padding:6px 18px;border-radius:999px;margin-bottom:18px}
+.sec-title{font-size:clamp(32px,4.4vw,50px);color:var(--plum-d);margin-bottom:18px}
+.sec-lead{font-size:22px;color:var(--muted);max-width:760px}
+.center{text-align:center}.center .sec-lead{margin:0 auto}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,248,243,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{font-family:"Noto Serif TC",serif;font-weight:900;font-size:24px;color:var(--plum)}
+.brand span{color:var(--rose)}
+nav ul{display:flex;gap:28px;list-style:none}
+nav ul a{text-decoration:none;font-size:20px;color:var(--ink);font-weight:500}
+nav ul a:hover{color:var(--rose)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-size:20px;font-weight:700;text-decoration:none;border:0;cursor:pointer;border-radius:999px;padding:14px 30px;color:#fff;background:linear-gradient(120deg,var(--rose),var(--violet));box-shadow:0 12px 30px -10px rgba(236,72,153,.65);transition:transform .2s,box-shadow .2s;font-family:inherit}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 36px -12px rgba(236,72,153,.8)}
+.btn.big{font-size:24px;padding:20px 44px}
+.btn.ghost{background:#fff;color:var(--plum);box-shadow:inset 0 0 0 2px var(--plum)}
+@media(max-width:900px){nav ul{display:none}}
+
+/* hero */
+.hero{padding:70px 0 110px;background:
+  radial-gradient(900px 500px at 85% 10%,rgba(139,92,246,.28),transparent 60%),
+  radial-gradient(700px 480px at 5% 90%,rgba(236,72,153,.22),transparent 60%),
+  linear-gradient(180deg,#fff3f8,#fff8f3);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.nw{white-space:nowrap;display:inline-block}
+.hero h1{font-size:clamp(34px,5vw,62px);color:var(--plum-d);font-weight:900}
+.hero h1 .hl{background:linear-gradient(120deg,var(--rose),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .gov{display:block;font-size:.62em;margin-top:10px;color:var(--ink)}
+.hero h1 .gov b{color:var(--rose);position:relative}
+.hero h1 .gov b::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:12px;background:rgba(245,185,66,.55);z-index:-1;border-radius:6px}
+.hero p.lead{font-size:23px;color:var(--muted);margin:24px 0 32px}
+.hero .ctas{display:flex;gap:16px;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.chip{font-size:20px;background:#fff;border:1px solid var(--line);padding:6px 16px;border-radius:999px;color:var(--plum)}
+.hero-visual{position:relative}
+.orbit{position:absolute;inset:-30px;border-radius:50%;border:2px dashed rgba(139,92,246,.3);animation:spin 40s linear infinite}
+.badge-float{position:absolute;background:#fff;border-radius:20px;padding:12px 20px;box-shadow:0 20px 40px -18px rgba(91,42,134,.45);font-weight:700;font-size:20px;animation:bob 4s ease-in-out infinite}
+.badge-float.b1{top:6%;left:-8%;color:var(--rose)}
+.badge-float.b2{bottom:10%;right:-6%;color:var(--plum);animation-delay:-2s}
+.badge-float.b3{bottom:-4%;left:8%;color:#0f8a5f;animation-delay:-1s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.badge-float.b1{left:0}.badge-float.b2{right:0}.orbit{inset:0}.hero .wrap{overflow:hidden}}
+
+/* petals */
+.petal{position:absolute;top:-40px;width:22px;height:22px;border-radius:70% 0 70% 0;background:linear-gradient(135deg,#f9a8d4,#c4b5fd);opacity:.7;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{to{transform:translate(120px,110vh) rotate(540deg)}}
+
+/* image slot (待放圖) */
+.slot{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:
+  radial-gradient(circle at 30% 25%,#fde68a 0,transparent 35%),
+  radial-gradient(circle at 75% 70%,#f9a8d4 0,transparent 45%),
+  linear-gradient(150deg,#c4b5fd,#f472b6 60%,#fdba74);display:flex;align-items:center;justify-content:center;box-shadow:0 30px 60px -30px rgba(91,42,134,.6)}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slot .ph{text-align:center;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.2);padding:20px}
+.slot .ph .ico{font-size:72px;display:block;animation:bob 5s ease-in-out infinite}
+.slot .ph small{display:inline-block;margin-top:10px;font-size:20px;background:rgba(255,255,255,.25);padding:4px 14px;border-radius:999px}
+.slot.wide{aspect-ratio:16/9}.slot.sq{aspect-ratio:1/1}
+
+/* pain */
+.pain{background:#fff}
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.pain-card{background:var(--cream);border-radius:var(--radius);padding:32px;border:1px solid var(--line)}
+.pain-card .q{font-size:40px}
+.pain-card h3{font-size:24px;color:var(--plum);margin:8px 0}
+.pain-card p{color:var(--muted)}
+.turn{margin-top:56px;text-align:center;font-family:"Noto Serif TC",serif;font-size:clamp(26px,3.2vw,38px);color:var(--plum-d);font-weight:700}
+.turn em{font-style:normal;color:var(--rose)}
+@media(max-width:900px){.pain-grid{grid-template-columns:1fr}}
+
+/* pillars */
+.pillars{background:linear-gradient(180deg,#f6efff,#fff8f3)}
+.pillar{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:72px}
+.pillar:nth-of-type(even) .slot{order:2}
+.pillar .num{font-family:"Noto Serif TC",serif;font-size:76px;font-weight:900;line-height:1;background:linear-gradient(120deg,var(--rose),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.pillar h3{font-size:clamp(28px,3.4vw,40px);color:var(--plum-d);margin:10px 0 14px}
+.pillar .tag{font-size:20px;font-weight:700;color:var(--rose)}
+.pillar ul{list-style:none;margin-top:18px}
+.pillar li{padding-left:40px;position:relative;margin:10px 0}
+.pillar li::before{content:"✿";position:absolute;left:0;top:0;color:var(--rose);font-size:24px}
+.pillar .after{margin-top:20px;background:#fff;border-left:6px solid var(--gold);padding:16px 22px;border-radius:0 18px 18px 0;font-weight:500}
+@media(max-width:900px){.pillar{grid-template-columns:1fr}.pillar:nth-of-type(even) .slot{order:0}}
+
+/* transformation */
+.trans{background:var(--plum-d);color:#fff;overflow:hidden}
+.trans .sec-title{color:#fff}.trans .sec-lead{color:#e9d5ff}
+.trans .eyebrow{background:rgba(255,255,255,.12);color:#fbcfe8}
+.ba{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:stretch;margin-top:48px}
+.ba .col{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:34px}
+.ba .col h3{font-size:26px;margin-bottom:14px}
+.ba .col.after{background:linear-gradient(150deg,rgba(236,72,153,.35),rgba(139,92,246,.35))}
+.ba li{list-style:none;margin:12px 0}
+.ba .arrow{display:flex;align-items:center;font-size:56px;color:var(--gold);animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(10px)}}
+@media(max-width:900px){.ba{grid-template-columns:1fr}.ba .arrow{justify-content:center;transform:rotate(90deg);animation:none}}
+
+/* money */
+.money{background:#fff}
+.money-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;margin-top:40px}
+.price{background:linear-gradient(150deg,#fff1f7,#f3eaff);border-radius:var(--radius);padding:44px;text-align:center;border:2px solid #f5d0fe;position:relative;overflow:hidden}
+.price .was{font-size:26px;color:var(--muted);text-decoration:line-through;text-decoration-color:var(--rose);text-decoration-thickness:3px}
+.price .now{font-family:"Noto Serif TC",serif;font-size:clamp(56px,8vw,92px);font-weight:900;color:var(--rose);line-height:1.1}
+.price .note{font-size:20px;color:var(--plum)}
+.price .stamp{position:absolute;top:22px;right:-44px;background:var(--gold);color:var(--plum-d);font-weight:900;font-size:20px;padding:6px 56px;transform:rotate(35deg)}
+.steps{display:grid;gap:18px}
+.step{display:flex;gap:18px;align-items:flex-start;background:var(--cream);border-radius:22px;padding:20px 24px;border:1px solid var(--line)}
+.step b.n{flex:0 0 52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;color:#fff;background:linear-gradient(120deg,var(--rose),var(--violet))}
+.step h4{font-size:22px;color:var(--plum-d)}
+.step p{color:var(--muted)}
+.elig{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.elig div{background:#f6efff;border-radius:22px;padding:24px;text-align:center}
+.elig .i{font-size:44px}
+.elig h4{font-size:22px;color:var(--plum);margin:6px 0}
+.elig p{color:var(--muted)}
+.who{margin-top:24px;text-align:center;color:var(--muted)}
+.who span{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 16px;margin:6px;color:var(--plum)}
+@media(max-width:900px){.money-grid,.elig{grid-template-columns:1fr}}
+
+/* info */
+.info{background:linear-gradient(180deg,#fff8f3,#fdeef6)}
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:44px}
+.session{background:#fff;border-radius:var(--radius);padding:34px;box-shadow:0 24px 50px -32px rgba(91,42,134,.5);position:relative}
+.session .lbl{display:inline-block;font-size:20px;font-weight:700;color:#fff;padding:4px 18px;border-radius:999px;background:var(--rose)}
+.session.wd .lbl{background:var(--plum)}
+.session .date{font-family:"Noto Serif TC",serif;font-size:clamp(30px,3.6vw,42px);color:var(--plum-d);font-weight:900;margin:14px 0 4px}
+.session p{color:var(--muted)}
+.facts{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fact{background:#fff;border-radius:22px;padding:24px;border:1px solid var(--line)}
+.fact .i{font-size:36px}
+.fact h4{font-size:22px;color:var(--plum)}
+.fact p{color:var(--muted)}
+@media(max-width:900px){.info-grid,.facts{grid-template-columns:1fr}}
+
+/* teacher */
+.teacher .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.teacher h3{font-size:clamp(30px,3.6vw,42px);color:var(--plum-d)}
+.teacher .role{color:var(--rose);font-weight:700;font-size:22px;margin:6px 0 18px}
+.teacher ul{list-style:none}
+.teacher li{margin:12px 0;padding-left:38px;position:relative}
+.teacher li::before{content:"★";position:absolute;left:0;color:var(--gold);font-size:24px}
+.org{margin-top:24px;padding:18px 22px;background:#f6efff;border-radius:18px;color:var(--plum)}
+@media(max-width:900px){.teacher .wrap{grid-template-columns:1fr}}
+
+/* poster */
+.poster{background:#fff}
+.poster-box{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center;margin-top:20px}
+.poster-box img{width:100%;border-radius:22px;box-shadow:0 30px 60px -30px rgba(91,42,134,.6)}
+@media(max-width:900px){.poster-box{grid-template-columns:1fr}}
+
+
+/* EDM download */
+.edm{background:linear-gradient(180deg,#fdeef6,#fff8f3)}
+.edm-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:32px;margin-top:44px;align-items:start}
+.edm-item{background:#fff;border-radius:var(--radius);padding:22px;border:1px solid var(--line);box-shadow:0 24px 50px -34px rgba(91,42,134,.5);text-align:center}
+.edm-item .slot.v{aspect-ratio:2/3}.edm-item .slot.h{aspect-ratio:3/2}
+.edm-item h3{font-size:24px;color:var(--plum-d);margin:16px 0 4px}
+.edm-item p{color:var(--muted);margin-bottom:14px}
+.btn.off{background:#d9cde6;box-shadow:none;cursor:not-allowed;pointer-events:none}
+@media(max-width:900px){.edm-grid{grid-template-columns:1fr}}
+/* faq */
+.faq{background:var(--cream)}
+.faq-list{max-width:860px;margin:44px auto 0}
+details{background:#fff;border-radius:20px;margin:14px 0;border:1px solid var(--line);overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:22px 28px;font-weight:700;font-size:22px;color:var(--plum-d);display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";color:var(--rose);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 28px 24px;color:var(--muted)}
+
+/* form */
+.signup{background:
+  radial-gradient(700px 400px at 90% 0,rgba(236,72,153,.35),transparent 60%),
+  radial-gradient(700px 400px at 0 100%,rgba(139,92,246,.45),transparent 60%),var(--plum-d);color:#fff}
+.signup .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.signup .sec-title{color:#fff}
+.signup .sec-lead{color:#f3e8ff}
+.signup .eyebrow{background:rgba(255,255,255,.14);color:#fbcfe8}
+.promise{margin-top:26px;list-style:none}
+.promise li{margin:12px 0;padding-left:40px;position:relative}
+.promise li::before{content:"💗";position:absolute;left:0}
+form{background:#fff;color:var(--ink);border-radius:var(--radius);padding:40px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+form h3{font-size:30px;color:var(--plum-d);margin-bottom:6px}
+form .sub{color:var(--muted);margin-bottom:20px}
+label{display:block;font-weight:700;font-size:20px;margin:16px 0 6px;color:var(--plum)}
+label .opt{font-weight:400;color:var(--muted)}
+input,select{width:100%;font-size:20px;font-family:inherit;padding:14px 18px;border-radius:16px;border:2px solid var(--line);background:#fffafd;color:var(--ink);transition:border .2s}
+input:focus,select:focus{outline:none;border-color:var(--violet)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.row2{grid-template-columns:1fr}}
+.agree{display:flex;gap:12px;align-items:flex-start;font-weight:400;color:var(--muted);margin-top:20px}
+.agree input{width:24px;height:24px;flex:0 0 24px;margin-top:6px}
+form .btn{width:100%;justify-content:center;margin-top:22px}
+.err{color:#c0265e;font-size:20px;margin-top:10px;min-height:1px}
+.thanks{display:none;text-align:center;padding:30px 10px}
+.thanks .i{font-size:80px;animation:bob 3s ease-in-out infinite}
+.thanks h3{font-size:32px;color:var(--plum-d)}
+.thanks p{color:var(--muted)}
+@media(max-width:900px){.signup .wrap{grid-template-columns:1fr}form{padding:28px}}
+
+footer{background:#22102f;color:#d8c8e6;padding:56px 0 120px;font-size:20px}
+footer .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+footer h4{color:#fff;font-size:22px;margin-bottom:10px}
+footer p{margin:4px 0}
+footer .disc{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;color:#b8a6c8}
+@media(max-width:900px){footer .wrap{grid-template-columns:1fr}}
+
+/* floating cta */
+.fab{position:fixed;right:22px;bottom:22px;z-index:60;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(236,72,153,.55)}50%{box-shadow:0 0 0 18px rgba(236,72,153,0)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">女人的<span>幸福</span>學</div>
+    <ul>
+      <li><a href="#course">課程亮點</a></li>
+      <li><a href="#free">政府買單</a></li>
+      <li><a href="#info">上課資訊</a></li>
+      <li><a href="#teacher">講師</a></li>
+      <li><a href="#edm">EDM 下載</a></li>
+      <li><a href="#faq">常見問題</a></li>
+    </ul>
+    <a class="btn" href="#signup">免費報名</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">🌷 婦女再就業專案・線上一日課</span>
+      <h1><span class="nw">台灣女人的<span class="hl">幸福</span>，</span><br><span class="nw">從今天開始升級</span>
+        <span class="gov"><span class="nw">妳的幸福妳掌握，</span><b class="nw">學費政府來買單</b></span>
+      </h1>
+      <p class="lead">一天課程，讓身體和心情一起放鬆下來，讓自己更有自信，用 AI 做事更輕鬆。<br>妳變得更好，全家也會更幸福。</p>
+      <div class="ctas">
+        <a class="btn big" href="#signup">💗 我想免費上課</a>
+        <a class="btn ghost" href="#course">先看看學什麼</a>
+      </div>
+      <div class="chips">
+        <span class="chip">✔ 符合資格可免費參訓</span>
+        <span class="chip">✔ 在家線上就能上</span>
+        <span class="chip">✔ 申請表格專人幫妳辦</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit"></div>
+      <div class="slot" data-img="IMG-001"><img src="img/IMG-001-v2.web.webp" width="799" height="1000" alt="穿薰衣草紫西裝外套、在窗邊自信微笑的台灣女性"></div>
+      <div class="badge-float b1">🌸 身心靈健康</div>
+      <div class="badge-float b2">🤖 AI 幫我起飛</div>
+      <div class="badge-float b3">🌱 ESG 新職能</div>
+    </div>
+  </div>
+</header>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="wrap center">
+    <span class="eyebrow">妳是不是也這樣？</span>
+    <h2 class="sec-title">照顧了全世界，卻忘了照顧自己</h2>
+    <p class="sec-lead">這些年妳為家人、孩子、長輩付出了很多，現在該留一點時間給自己了。</p>
+    <div class="pain-grid" style="text-align:left">
+      <div class="pain-card"><div class="q">😮‍💨</div><h3>每天都好累</h3><p>家事、工作、照顧家人輪番上陣，身體疲憊，心也跟著緊繃。</p></div>
+      <div class="pain-card"><div class="q">🤔</div><h3>想回職場卻沒把握</h3><p>離開職場一段時間，世界變得好快，不知道自己還跟不跟得上。</p></div>
+      <div class="pain-card"><div class="q">💭</div><h3>想再多做一點</h3><p>想多一份收入、做點自己喜歡的事，卻不知道從哪裡開始。</p></div>
+    </div>
+    <p class="turn">好好愛自己不是自私，是全家幸福的<em>起點</em>。</p>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="pillars" id="course">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">一天課程・三力合一</span>
+      <h2 class="sec-title">提升妳的「幸福競爭力」</h2>
+      <p class="sec-lead">先照顧好自己，再看懂未來的趨勢，最後學會用 AI 讓生活和工作都更輕鬆。</p>
+    </div>
+
+    <div class="pillar">
+      <div class="slot" data-img="IMG-002"><img src="img/IMG-002-v1.web.webp" alt="在窗邊閉眼深呼吸、雙手放在胸前的台灣女性" loading="lazy"></div>
+      <div>
+        <div class="num">01</div>
+        <span class="tag">身心靈健康・啟動潛力</span>
+        <h3>先把自己照顧好</h3>
+        <p>了解身體、情緒和心靈是怎麼運作的，學會照顧自己，活得健康、有意義。</p>
+        <ul>
+          <li>看懂自己的身心狀態，學會放下壓力</li>
+          <li>找回內在的力量，讓自己更有自信</li>
+          <li>把好的能量帶回家，家人相處更和樂</li>
+        </ul>
+        <div class="after">上完以後：妳不再只是忙碌的媽媽或太太，也更懂得疼愛自己。</div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="slot" data-img="IMG-003"><img src="img/IMG-003-v1.web.webp" alt="在陽光屋頂花園看著綠色植物的台灣女性" loading="lazy"></div>
+      <div>
+        <div class="num">02</div>
+        <span class="tag">ESG 永續趨勢・掌握新職能</span>
+        <h3>學會這個時代最受重視的新能力</h3>
+        <p>ESG（環境、社會、公司治理）是現在企業最重視的方向。懂 ESG 的人，到哪裡都更有機會。</p>
+        <ul>
+          <li>用生活化的例子，一聽就懂 ESG 在做什麼</li>
+          <li>了解企業正在找什麼樣的人才</li>
+          <li>從「企業永續」延伸到「個人永續」，讓人生走得更長遠</li>
+        </ul>
+        <div class="after">上完以後：不管是回到職場還是自己創業，妳都多了一項新優勢。</div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="slot" data-img="IMG-004"><img src="img/IMG-004-v1.web.webp" alt="在家用筆電學習 AI 的台灣女性" loading="lazy"></div>
+      <div>
+        <div class="num">03</div>
+        <span class="tag">AI 實務應用・提升職場競爭力</span>
+        <h3>讓 AI 成為妳的好幫手</h3>
+        <p>不用懂電腦程式，從零開始學，用手機和電腦就能讓 AI 幫妳做事。</p>
+        <ul>
+          <li>寫文案、整理資料、規劃行程，AI 都能幫忙</li>
+          <li>把 AI 用在工作和副業上，效率明顯提升</li>
+          <li>幫自己，也能幫家人和公司一起進步</li>
+        </ul>
+        <div class="after">上完以後：別人還在摸索的時候，妳已經會用 AI 幫自己做事了。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATION -->
+<section class="trans">
+  <div class="wrap center">
+    <span class="eyebrow">一天課程，讓您脫胎換骨</span>
+    <h2 class="sec-title">上課前和上課後的妳</h2>
+    <p class="sec-lead">短短一天的課，會讓妳在很多地方都不一樣。</p>
+    <div class="ba" style="text-align:left">
+      <div class="col">
+        <h3>😔 上課前</h3>
+        <ul><li>常常覺得累，沒時間照顧自己</li><li>對回到職場沒有把握</li><li>聽到 AI、ESG 就覺得很遙遠</li><li>覺得自己的價值被埋沒了</li></ul>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="col after">
+        <h3>🌟 上課後</h3>
+        <ul><li>懂得照顧自己，身心更平衡</li><li>多了 AI 和 ESG 兩項新能力</li><li>對回職場或創業更有信心</li><li>自己快樂了，家裡也更和樂</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MONEY -->
+<section class="money" id="free">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">💰 政府出錢讓妳學習成長</span>
+      <h2 class="sec-title">學費不用擔心，政府幫妳出</h2>
+      <p class="sec-lead">勞動部「婦女再就業計畫」補助想重新出發的女性。只要符合資格，就可以免費上課。</p>
+    </div>
+    <div class="money-grid">
+      <div class="price">
+        <div class="stamp">政府補助</div>
+        <div class="was">原價學費 20,000 元</div>
+        <div class="now">免費參訓</div>
+        <div class="note">符合女性政府補助資格者適用</div>
+        <p style="margin-top:18px;color:var(--muted)">結訓後 180 天內就業或創業，依計畫規定還有機會再申請獎勵。</p>
+      </div>
+      <div class="steps">
+        <div class="step"><b class="n">1</b><div><h4>留下資料</h4><p>填姓名和電話，一分鐘就好。</p></div></div>
+        <div class="step"><b class="n">2</b><div><h4>專人聯絡妳</h4><p>確認資格，申請表格我們一欄一欄陪妳填。</p></div></div>
+        <div class="step"><b class="n">3</b><div><h4>審核通過，開心上課</h4><p>在家線上學習，一天 8 小時，學好學滿。</p></div></div>
+      </div>
+    </div>
+
+    <div class="elig">
+      <div><div class="i">🎂</div><h4>年滿 18 歲婦女</h4><p>不是學生，沒有年齡上限</p></div>
+      <div><div class="i">🏠</div><h4>離開公司保險滿半年</h4><p>最近 180 天沒有公司投保或職災保險</p></div>
+      <div><div class="i">🧾</div><h4>不是公司負責人</h4><p>名下沒有公司或商業登記</p></div>
+    </div>
+    <p class="who">這些人都可以：<span>全職媽媽</span><span>照顧家人離職</span><span>工會保</span><span>農保・漁保</span><span>無保</span><span>軍公教・勞保退休</span></p>
+    <p class="who">不確定自己符不符合？留下資料，我們幫妳確認。</p>
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="info" id="info">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">📅 上課資訊</span>
+      <h2 class="sec-title">共二場，選一場參加</h2>
+      <p class="sec-lead">假日班、平日班都有，看哪一天方便就選哪一天。</p>
+    </div>
+    <div class="info-grid">
+      <div class="session"><span class="lbl">第一場・假日班</span><div class="date">2027 年 1 月 23 日（六）</div><p>09:00 – 18:00</p></div>
+      <div class="session wd"><span class="lbl">第二場・平日班</span><div class="date">2027 年 2 月 24 日（三）</div><p>09:00 – 18:00</p></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><div class="i">💻</div><h4>線上視訊上課</h4><p>遠距線上學習，在家也能上課。</p></div>
+      <div class="fact"><div class="i">🎬</div><h4>有錄影可補課</h4><p>臨時有事，先請假就能看錄影補課。</p></div>
+      <div class="fact"><div class="i">🤝</div><h4>專人輔導</h4><p>從申請到結案，都有專人協助。</p></div>
+    </div>
+    <div class="slot wide" data-img="IMG-005" style="margin-top:40px"><img src="img/IMG-005-v1.web.webp" alt="在家客廳線上上課的溫馨畫面" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- TEACHER -->
+<section class="teacher" id="teacher" style="background:#fff">
+  <div class="wrap">
+    <div class="slot sq" data-img="IMG-006"><img src="img/IMG-006-v1.web.webp" alt="線上教學的書桌一角" loading="lazy"></div>
+    <div>
+      <span class="eyebrow">💪 正港實戰班</span>
+      <h3>朱元中 Patrick</h3>
+      <div class="role">天下顧問創辦人・實戰派講師</div>
+      <ul>
+        <li>2015 年創立天下顧問，協助企業轉型、升級與接班</li>
+        <li>2016 年取得 B 型企業認證，2022 年起輔導企業導入 ESG</li>
+        <li>從「企業永續」到「個人永續（身心靈健康）」，一直不斷精進</li>
+        <li>天下顧問同時是 AA1000 授權培訓與驗證單位，教學以實戰為主</li>
+      </ul>
+      <div class="org">主辦：天下顧問股份有限公司（公益型企業）<br>協辦：中華全人永續協會</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDM DOWNLOAD -->
+<section class="edm" id="edm">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">📥 EDM 下載</span>
+      <h2 class="sec-title">把幸福分享給身邊的姊妹</h2>
+      <p class="sec-lead">直式適合 LINE 和手機，橫式適合臉書和電子報。下載後轉傳，邀請好朋友一起來上課。</p>
+    </div>
+    <div class="edm-grid">
+      <div class="edm-item">
+        <div class="slot v" data-img="EDM-V"><img src="img/EDM-V-v1.web.webp" alt="直式 EDM 預覽" loading="lazy"></div>
+        <h3>直式 EDM</h3><p>LINE・手機・IG 限動</p>
+        <a class="btn" id="dl-v" href="img/EDM-V-final.png" download="幸福學-直式EDM.png">⬇ 下載直式 EDM</a>
+      </div>
+      <div class="edm-item">
+        <div class="slot h" data-img="EDM-H"><img src="img/EDM-H-v1.web.webp" alt="橫式 EDM 預覽" loading="lazy"></div>
+        <h3>橫式 EDM</h3><p>臉書貼文・電子報・簡報</p>
+        <a class="btn" id="dl-h" href="img/EDM-H-final.png" download="幸福學-橫式EDM.png">⬇ 下載橫式 EDM</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">💬 常見問題</span><h2 class="sec-title">大家最常問的</h2></div>
+    <div class="faq-list">
+      <details><summary>我很久沒上課了，跟得上嗎？</summary><p>可以的。課程從生活化的例子講起，AI 也從零教起，不需要任何基礎。線上課程還有錄影可以補課。</p></details>
+      <details><summary>真的不用自己付學費嗎？</summary><p>符合婦女再就業計畫資格的學員，可以申請政府補助免費參訓。專人會先幫妳確認資格，再說明完整流程。</p></details>
+      <details><summary>申請表格很多，我看不懂怎麼辦？</summary><p>不用擔心，留下資料後會有專人聯絡妳，一欄一欄陪妳填好。</p></details>
+      <details><summary>我是保工會保或已經退休，可以參加嗎？</summary><p>工會保、農保、漁保、無保、軍公教退休或勞保退休，原則上都可以。只要最近 180 天沒有公司投保或加職災保險就行。實際以勞動部審核為準。</p></details>
+      <details><summary>報名有截止時間嗎？</summary><p>補助要先送件審核，越早留資料越好。名額有限，建議現在先留下聯絡方式。</p></details>
+      <details><summary>還有其他問題要問誰？</summary><p>可以直接聯絡朱先生 0911-018133，或在下方留資料，我們會主動聯絡妳。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNUP -->
+<section class="signup" id="signup">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">✍️ 一分鐘留資料</span>
+      <h2 class="sec-title">讓這一天，成為妳幸福的轉捩點</h2>
+      <p class="sec-lead">只要留下聯絡方式，接下來的事交給我們就好。</p>
+      <ul class="promise">
+        <li>專人主動聯絡，幫妳確認補助資格</li>
+        <li>申請表格陪妳一起填好</li>
+        <li>資料只用來聯絡妳，不會外流</li>
+      </ul>
+    </div>
+    <form id="leadForm" novalidate data-works-form="women-happiness">
+      <div id="formBody">
+        <h3>我想免費上課 🌷</h3>
+        <p class="sub">標 * 的是必填，其他可以留空。</p>
+        <label for="name">姓名 *</label>
+        <input id="name" name="name" autocomplete="name" placeholder="例如：林美華" required>
+        <div class="row2">
+          <div><label for="phone">手機 *</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="09xx-xxx-xxx" required></div>
+          <div><label for="line">LINE ID <span class="opt">（選填）</span></label><input id="line" name="line" placeholder="方便用 LINE 聯絡妳"></div>
+        </div>
+        <label for="email">Email <span class="opt">（選填）</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+        <label for="session">想上哪一場 <span class="opt">（選填）</span></label>
+        <select id="session" name="session">
+          <option value="">還沒決定，請專人說明</option>
+          <option>第一場・假日班 2027/1/23（六）</option>
+          <option>第二場・平日班 2027/2/24（三）</option>
+        </select>
+        <label class="agree"><input type="checkbox" id="agree" checked> 我同意提供以上資料，只用來聯絡我和協助辦理婦女再就業計畫的相關申請。</label>
+        <div class="err" id="err"></div>
+        <button class="btn big" type="submit">🚀 送出，請專人聯絡我</button>
+      </div>
+      <div class="thanks" id="thanks">
+        <div class="i">💐</div>
+        <h3>收到了，謝謝妳！</h3>
+        <p>專人會盡快主動聯絡妳。<br>現在開始，好好期待更幸福的自己吧！</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><h4>主辦單位</h4><p>天下顧問股份有限公司（公益型企業）</p><p>AA1000 授證查證・培訓機構</p></div>
+    <div><h4>協辦單位</h4><p>中華全人永續協會</p></div>
+    <div><h4>聯絡我們</h4><p>聯絡人：朱先生</p><p><a href="tel:0911018133">0911-018133</a></p><p>新竹縣竹北市復興三路二段 168 號 9 樓之五</p></div>
+    <p class="disc">補助資格與金額以勞動部勞動力發展署公告及就業中心審核為準。如遇不可抗拒因素，主辦單位保留調整課程日期的權利。</p>
+  </div>
+</footer>
+
+<a class="btn fab" href="#signup">💗 免費報名</a>
+
+<script>
+/* 飄落花瓣 */
+(function(){
+  const hero=document.querySelector('.hero');
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  for(let i=0;i<14;i++){
+    const p=document.createElement('span');p.className='petal';
+    p.style.left=Math.random()*100+'%';
+    p.style.animationDuration=(9+Math.random()*9)+'s';
+    p.style.animationDelay=(-Math.random()*15)+'s';
+    p.style.transform='scale('+(.6+Math.random()*.8)+')';
+    hero.appendChild(p);
+  }
+})();
+
+/* 表單：把 ENDPOINT 換成接收資料的網址（例如 Google Apps Script），送出時會用 POST 傳 JSON */
+const ENDPOINT = "";
+document.getElementById('leadForm').addEventListener('submit', async e=>{
+  e.preventDefault();
+  const f=e.target, err=document.getElementById('err');
+  const name=f.name.value.trim(), phone=f.phone.value.replace(/[\s-]/g,'');
+  if(!name){err.textContent='請填寫姓名';f.name.focus();return}
+  if(!/^09\d{8}$/.test(phone)&&!/^0\d{7,9}$/.test(phone)){err.textContent='請填寫正確的電話號碼';f.phone.focus();return}
+  if(!document.getElementById('agree').checked){err.textContent='請勾選同意，我們才能聯絡妳';return}
+  err.textContent='';
+  const data={name,phone,line:f.line.value.trim(),email:f.email.value.trim(),session:f.session.value,time:new Date().toISOString(),page:'women-happiness-v2'};
+  try{ if(ENDPOINT) await fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify(data)}); }catch(_){}
+  document.getElementById('formBody').style.display='none';
+  document.getElementById('thanks').style.display='block';
+});
+</script>
+<script src="/static/works-form.js" defer></script>
+</body>
+</html>
